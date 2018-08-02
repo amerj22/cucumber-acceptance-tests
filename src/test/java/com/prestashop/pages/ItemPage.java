@@ -31,6 +31,12 @@ public class ItemPage {
 	@FindBy(className = "our_price_display")
 	public WebElement price;
 	
+	@FindBy(xpath = "//table[@class='table-data-sheet']/tbody/tr[2]/td[2]")
+	public WebElement style;
+	
+	@FindBy(css = ".color_pick.selected")
+	  public WebElement selectedColor;
+	
 	public Select size() {
 		return new Select(Driver.getDriver().findElement(By.id("group_1")));
 	}

@@ -1,6 +1,6 @@
 Feature: User account information
 
-@temp
+
 Scenario Outline: verify account info
 	Given the user is on the login page
 	And I login using username "<username>" and password "<password>"

@@ -16,7 +16,9 @@ import cucumber.api.junit.Cucumber;
 		
 		tags="@temp",
 		features="src/test/resources/com/prestashop/features", 
-		glue="com/prestashop/step_definitions"
-		,dryRun = true
+		glue="com/prestashop/step_definitions",
+		dryRun = false
 		)
-public class CukesRunner {}
+public class CukesRunner {
+	
+}
